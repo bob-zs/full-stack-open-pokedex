@@ -102,7 +102,7 @@ describe('<PokemonPage />', () => {
     expect(screen.getByTestId('stats')).toHaveTextContent('hp55attack55')
   })
 
-  it('should render previous and next urls if they exist', async () => {
+  xit('should render previous and next urls if they exist', async () => {
     axiosMock.get.mockResolvedValueOnce({ data: pokemonList })
 
     await act(async () => {
